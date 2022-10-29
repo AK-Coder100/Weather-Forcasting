@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';                                                                                                               
+}
+body{
+    background-color: #E7E7E7;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    margin: 20vh auto;
+    padding: 1rem;
+    width: 538px;
+    height: 739px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    text-align: center;
+    height: 9   0vh;
+}
+.cross-but{
+    background-color: transparent;
+    border: transparent;
+    width: 1rem;
+    float: right;
+    align-self: self-end;
+}
+.div-cre{
+    display: flex;
+    margin: 0 5%;
+    border: solid 0.1em gray;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1rem;
+}
+.input-cre{
+    border:transparent;
+    width: 100%;
+    outline: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+}
+.auth-but:disabled{
+    background-color:#D9D9D9;
+    color: gray;
+}
+.auth-but{
+    width: 80% ;
+    margin: 0 auto;
+    font-size: large;
+    border-radius: 10px;
+    border: transparent;
+    line-height: 3rem;
+    background: linear-gradient(192.05deg, #47BFDF 0%, #4A91FF 100%);
+    color: white;
+}
+a{
+    font-family: 'Plus Jakarta Sans';
+}
+.bottom{
+    margin-top:250px;
+}
+.back-but{
+    background-color: transparent;
+    border: transparent;
+    height: min-content ;
+}
+.arrow-icon{
+    height: 0.7rem;
+    margin-right: 0.5rem;
+}
