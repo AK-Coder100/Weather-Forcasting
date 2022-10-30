@@ -6,6 +6,7 @@ import Reset from "./component/auth/reset";
 import Forgot from "./component/auth/forgot";
 import LoginVerify from "./component/auth/LoginVerify";
 import SignupVerify from "./component/auth/SignupVerify";
+import Home from "./component/main/Home";
 
 
 
@@ -14,7 +15,7 @@ const App=()=>{
         <>
         <BrowserRouter>
             <Routes>
-                <Route exact path="/" element={<Login/>} />
+                <Route exact path="/" element={<Home/>} />
                 <Route exact path="/auth" element={<Auth/>}>
                     <Route exact path="/auth/" element={<Signup/>} />
                     <Route exact path="/auth/signup" element={<Signup/>} />

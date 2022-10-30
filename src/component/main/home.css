@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    background: linear-gradient(192.05deg, #47BFDF 0%, #4A91FF 100%);
+}
+.sidebar{
+    padding: 1rem;
+    max-width: 250px;
+    background-color: white;
+    height: 100vh;
+}
+.sidelogo{
+    width:117px
+} 
+.sidebar h1{font-weight: 800;
+    font-size: 16.7516px;
+    line-height: 20px;
+}
+ul{ 
+    /* margin-top: 1.5rem; */
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    width: 250px;
+
+}
+.sidebar li{
+    height: 3rem;
+    padding: 15px 0px 0px;
+}
+.active-style{
+    background: linear-gradient(192.05deg, #47BFDF 0%, #4A91FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border-left:solid #4A91FF;
+    /* text-fill-color: transparent; */
+
+}
+.active-style path{
+    fill: #4A91FF;
+}
+.sidebar-item{
+    text-decoration: none;
+    text-decoration-color:black ;
+    padding: 0 0.3rem;
+}
+a{
+    text-decoration: none;
+}
+.Icon svg{
+    
+    width: 1rem;
+    margin-bottom: -0.25rem;
+    margin-right: 0.4rem;
+}
+.ham{
+    margin: 0.8rem;
+}
+.sunSvg svg{
+    width: 16rem !important;
+
+}
+
+.weather-card{
+width: 300px;
+aspect-ratio: 1 / 1  ;
+background: rgba(255, 255, 255, 0.3);
+border-radius: 20px;
+font-family: Overpass;
+color: #FFFFFF;
+text-align: center;
+padding: 2rem;
+}
+.weather-card *{
+    text-shadow: -4px 8px 25px rgba(0, 0, 0, 0.4);
+}
