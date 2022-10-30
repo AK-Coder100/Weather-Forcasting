@@ -7,6 +7,8 @@ import Forgot from "./component/auth/forgot";
 import LoginVerify from "./component/auth/LoginVerify";
 import SignupVerify from "./component/auth/SignupVerify";
 import Home from "./component/main/Home";
+import DashBoard from "./component/main/DashBoard";
+import ForecastReport from "./component/main/ForecastReport";
 
 
 
@@ -15,7 +17,10 @@ const App=()=>{
         <>
         <BrowserRouter>
             <Routes>
-                <Route exact path="/" element={<Home/>} />
+                <Route exact path="/" element={<Home/>} >
+                    <Route exact path="/dashboard" element={<DashBoard/>} />
+                    <Route exact path="/forecast-report" element={<ForecastReport/>} />
+                </Route>
                 <Route exact path="/auth" element={<Auth/>}>
                     <Route exact path="/auth/" element={<Signup/>} />
                     <Route exact path="/auth/signup" element={<Signup/>} />

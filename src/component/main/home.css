@@ -6,12 +6,49 @@
 body{
     
     background: linear-gradient(192.05deg, #47BFDF 0%, #4A91FF 100%);
+    height: 100vh;
+}
+
+.backdrop{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #808080b5;
+    z-index: 40;
+}
+.off-card{
+    position: fixed;
+    z-index: 70;
+    width: max-content;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 3rem;
+    text-align: -webkit-center;
+    text-align: center;
+    margin-top: 20vh;
+    margin-left: 50vw;
+    translate: -50%;
+
+}
+.off-card svg{
+        height: 100px;
+        width: 100px;
+        background-color:  #FFD6D6;        ;
+        border: solid transparent;
+        border-radius: 50%;
+}
+.off-card button{
+    padding: 0.3rem 1rem;
+    border: solid 1px  transparent; 
+    border-radius: 10px ;
+    margin: 1rem;
 }
 .sidebar{
     padding: 1rem;
     max-width: 250px;
     background-color: white;
     height: 100vh;
+    position: relative;
 }
 .sidelogo{
     width:117px
@@ -78,7 +115,73 @@ font-family: Overpass;
 color: #FFFFFF;
 text-align: center;
 padding: 2rem;
+
 }
 .weather-card *{
     text-shadow: -4px 8px 25px rgba(0, 0, 0, 0.4);
+}
+.upgrad-but{
+    width: 80% ;
+    margin: 0 auto;
+    font-size: large;
+    border-radius: 10px;
+    border: transparent;
+    line-height: 3rem;
+    background: linear-gradient(192.05deg, #47BFDF 0%, #4A91FF 100%);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.table{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 8rem !important;
+    width: 100%;
+    padding:0 0.2rem;
+    column-gap: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+.table-com{
+    display:"flex";
+    flex-direction:"row";
+    justify-content:"space-between";
+    margin:"0 1rem";
+    height: 4rem;
+    border: solid 1px white;
+    border: solid 1px rgb(255 255 255 / 8%);
+}
+.table-com svg{
+    width:4rem;
+    height: 3rem;
+}
+
+
+
+@media (max-width:700px){
+    .sidebar-sm{
+    position:absolute ;
+    left:-100%;
+}
+.table{
+    display: block  ;
+}
 }

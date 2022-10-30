@@ -11,8 +11,8 @@ body{
     display: flex;
     flex-direction: column;
     margin: 20vh auto;
-    padding: 1rem;
-    width: 538px;
+    padding: 2rem;
+    max-width: 538px;
     height: 739px;
     background: #FFFFFF;
     border-radius: 20px;
@@ -75,3 +75,7 @@ a{
     height: 0.7rem;
     margin-right: 0.5rem;
 }
+
+
+
+
