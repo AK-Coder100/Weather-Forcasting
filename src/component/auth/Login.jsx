@@ -29,7 +29,7 @@ const Login=()=>{
             <button className='auth-but'  type='submit' >Continue</button>
             </form>
             <br/>
-            <Link to="/auth/reset">Forgot password ?</Link>
+            <Link to="/auth/forgot">Forgot password ?</Link>
             <div className='bottom'><span>Don't have account ?</span><Link to="/auth/signup">sign up </Link></div>
         </>
     )

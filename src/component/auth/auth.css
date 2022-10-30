@@ -61,7 +61,10 @@ a{
     font-family: 'Plus Jakarta Sans';
 }
 .bottom{
-    margin-top:250px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
 }
 .back-but{
     background-color: transparent;

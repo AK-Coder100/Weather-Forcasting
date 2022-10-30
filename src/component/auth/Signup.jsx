@@ -21,7 +21,7 @@ const Signup=()=>{
     return(
         <>
 
-            <form style={{display:"flex",flexDirection:"column",gap:"1rem",width:"max-containt"}}>
+            <form style={{display:"flex",flexDirection:"column",gap:"1rem",width:"max-containt"}} onSubmit={()=>{ ()=>{navigate("/auth/signup/verify")}}}>
             <p style={{color:"gray" ,margin:"0.5rem"}}>Enter email address and password</p>
             <div className='div-cre'><input className='input-cre' name='email' type="text" placeholder='Email' value={input.email} onChange={handleChange} /></div>
             <div className='div-cre'><input  className='input-cre' name='pass' type={hide} placeholder='Password'  value={input.pass} onChange={handleChange} /><img style={{width:"1.5rem"}} src={eye} onClick={()=>{setHide(hide==="password"?"text":"password")}} /></div>

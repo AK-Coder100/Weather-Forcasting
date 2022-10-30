@@ -15,7 +15,7 @@ const Auth=()=>{
                     <div><img src={logo}></img></div>
                     <p style={{fontSize: "large",fontWeight: "bolder"}}>Forcasting</p>
                     
-                <div >
+                <div style={{    position: "relative",height: "-webkit-fill-available"}} >
                     <Outlet/>
 
                     {/* <form style={{display:"flex",flexDirection:"column",gap:"1rem",width:"max-containt"}}>
