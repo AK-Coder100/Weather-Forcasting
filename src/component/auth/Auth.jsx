@@ -6,7 +6,7 @@ import { Outlet } from 'react-router-dom'
 
 
 const Auth=()=>{
-
+    
 
     return(
         <><div style={{height:"100vh"}}>

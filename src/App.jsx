@@ -13,11 +13,16 @@ import ForecastReport from "./component/main/ForecastReport";
 
 
 const App=()=>{
+
+
+    
     return(
         <>
         <BrowserRouter>
             <Routes>
                 <Route exact path="/" element={<Home/>} >
+                    
+                    <Route exact path="/" element={<DashBoard/>} />
                     <Route exact path="/dashboard" element={<DashBoard/>} />
                     <Route exact path="/forecast-report" element={<ForecastReport/>} />
                 </Route>
