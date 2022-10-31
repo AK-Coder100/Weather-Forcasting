@@ -1,17 +1,17 @@
-import { NavLink, Outlet } from "react-router-dom"
+import { NavLink, Outlet, useNavigate } from "react-router-dom"
 import logo from "../auth/image/logo.svg"
 import cut from "./image/cut.png"
 import {Hambugger,LocationIcon,TurnOff,SunSvg,BackArrow} from "./image/SvgIcon"
 
 import {ReportIcon,DashboardIcon} from "./image/SvgIcon"
 import "./home.css"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 
 
 
 const Home=()=>{
-
+    const navigate=useNavigate()
     const [backdrop,setBackdrop]=useState(false)
     const [hide,setHide]=useState(true)
     const [ser,setSer]=useState(false)
@@ -43,8 +43,16 @@ const Home=()=>{
         ]
       }
 
-      
+      const logout=()=>{
+        localStorage.removeItem('user')
+        navigate('/auth/login')
+    }
 
+    useEffect(()=>{
+        if (localStorage.getItem('user')===null){
+            navigate('/auth/login')
+        }
+    })
 
     return(
         <>
@@ -56,7 +64,7 @@ const Home=()=>{
                     <h2>Log out</h2>
                     <p style={{fontSize:"small"}}>Are you sure you want to logout from app</p>
                     <div>
-                        <button style={{background:"#FF6D6D" , color:"#FFFFFF"}}>Log out</button><button onClick={()=>{setBackdrop(false)}}>Cancle</button>
+                        <button style={{background:"#FF6D6D" , color:"#FFFFFF"}} onClick={logout}>Log out</button><button onClick={()=>{setBackdrop(false)}}>Cancle</button>
                     </div>
                 </div></>):<></>
 }

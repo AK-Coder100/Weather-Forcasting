@@ -3,10 +3,19 @@ import './auth.css'
 import cross from './image/cross.svg'
 import logo from './image/logo.svg'
 import { Outlet } from 'react-router-dom'
+import { useEffect } from 'react'
 
 
 const Auth=()=>{
-    
+    const users={
+        "email": "suman@email.com",
+        "password": "Password@123"
+      }
+
+    useEffect(()=>{
+        if (localStorage.getItem('users')===null){
+            localStorage.setItem('users',JSON.stringify([users]))
+        }else{}})
 
     return(
         <><div style={{height:"100vh"}}>

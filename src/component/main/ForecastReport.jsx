@@ -182,27 +182,27 @@ const ForecastReport=()=>{
             <div  className="table-com" style={{display:"flex",flexDirection:"row",justifyContent:"space-between",margin:"0 0.5rem"}}>
               <div>sept,14  </div>
               <div><SunSvg/></div>
-              <div>21°</div>
+              <div>19°</div>
             </div>
             <div  className="table-com" style={{display:"flex",flexDirection:"row",justifyContent:"space-between",margin:"0 0.5rem"}}>
               <div>sept,15  </div>
               <div><SunSvg/></div>
-              <div>21°</div>
+              <div>20°</div>
             </div>
             <div  className="table-com" style={{display:"flex",flexDirection:"row",justifyContent:"space-between",margin:"0 0.5rem"}}>
               <div>sept,15  </div>
               <div><SunSvg/></div>
-              <div>21°</div>
+              <div>24°</div>
             </div>
             <div  className="table-com" style={{display:"flex",flexDirection:"row",justifyContent:"space-between",margin:"0 0.5rem"}}>
               <div>sept,16  </div>
               <div><SunSvg/></div>
-              <div>21°</div>
+              <div>22°</div>
             </div>
             <div  className="table-com" style={{display:"flex",flexDirection:"row",justifyContent:"space-between",margin:"0 0.5rem"}}>
               <div>sept,17  </div>
               <div><SunSvg/></div>
-              <div>21°</div>
+              <div>25°</div>
             </div>
             {
               forecast.FORECAST.map((e,i)=>{
