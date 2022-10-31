@@ -3,7 +3,7 @@ import Auth from "./component/auth/Auth";
 import Login from "./component/auth/Login";
 import Signup from "./component/auth/Signup";
 import Reset from "./component/auth/reset";
-import Forgot from "./component/auth/forgot";
+// import Forgot from "./component/auth/forgot";
 import LoginVerify from "./component/auth/LoginVerify";
 import SignupVerify from "./component/auth/SignupVerify";
 import Home from "./component/main/Home";
@@ -31,7 +31,7 @@ const App=()=>{
                     <Route exact path="/auth/signup" element={<Signup/>} />
                     <Route exact path="/auth/signup/verify" element={<SignupVerify/>} />
                     <Route exact path="/auth/login" element={<Login/>} />
-                    <Route exact path="/auth/forgot" element={<Forgot/>} />
+                    {/* <Route exact path="/auth/forgot" element={<Forgot/>} /> */}
                     <Route exact path="/auth/login/verify" element={<LoginVerify/>} />
                     <Route exact path="/auth/reset" element={<Reset/>} />
                 </Route>
