@@ -3,10 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior:smooth;
+    font-family: 'Inter';
 }
 body{
     
-    background: linear-gradient(192.05deg, #47BFDF 0%, #4A91FF 100%);
+    /* background: linear-gradient(192.05deg, #47BFDF 0%, #4A91FF 100%); */
     height: 100vh;
 }
 
@@ -65,21 +66,26 @@ ul{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-
     width: 250px;
 
 }
 .sidebar li{
     height: 3rem;
     padding: 15px 0px 0px;
+    display: flex;
+    width: 100%;
+    gap: 1rem;
 }
+/* .sidebar svg{
+    height:0.8rem;
+} */
 .active-style{
-    background: linear-gradient(192.05deg, #47BFDF 0%, #4A91FF 100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: linear-gradient(192.05deg, #47BFDF 0%, #4A91FF 100%);;
     background-clip: text;
     border-left:solid #4A91FF;
-    /* text-fill-color: transparent; */
+    background: linear-gradient(192.05deg, rgba(71, 191, 223, 0.1) 0%, rgba(74, 145, 255, 0.1) 100%);
+    width: 100%;
 
 }
 .active-style path{
@@ -118,8 +124,9 @@ text-align: center;
 padding: 2rem;
 
 }
-.weather-card *{
+.weather-card span{
     text-shadow: -4px 8px 25px rgba(0, 0, 0, 0.4);
+    font-family: Overpass;
 }
 .upgrad-but{
     width: 80% ;
@@ -194,6 +201,8 @@ padding: 2rem;
    margin:1rem;
    background-color: #FFFFFF;
    right: 1rem;
+   top:6vh;
+   z-index: 20;
 }
 .ser input{
     width: 60%;

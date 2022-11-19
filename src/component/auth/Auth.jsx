@@ -18,7 +18,7 @@ const Auth=()=>{
         }else{}})
 
     return(
-        <><div style={{height:"100vh"}}>
+        <><div style={{minHeight:"100vh",overflow:"auto"}}>
             <div className='card'>
                 <button className='cross-but'><img src={cross}></img> </button>
                     <div><img src={logo}></img></div>

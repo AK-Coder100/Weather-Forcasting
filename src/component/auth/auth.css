@@ -57,9 +57,7 @@ body{
     background: linear-gradient(192.05deg, #47BFDF 0%, #4A91FF 100%);
     color: white;
 }
-a{
-    font-family: 'Plus Jakarta Sans';
-}
+
 .bottom{
     position: absolute;
     bottom: 0px;
